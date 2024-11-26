@@ -1,0 +1,287 @@
+/* style.css */
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #647d89;
+  color: #333;
+  line-height: 1.6;
+  flex-wrap: nowrap;
+}
+
+h1,h2,h3,h4 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.h4 span {
+  color: #00a3a3;
+}
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  text-align: center;
+  position: relative;
+  margin-left: 160px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: #00a3a3;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header p {
+  font-size: 1.2em;
+  margin-top: 5px;
+  color: #ff6600;
+
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #222;
+  color: #fff;
+  width: 130px;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.sidebar-header {
+
+  align-items: center;
+}
+
+.sidebar-header img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.sidebar-header h2 {
+  color: #00a3a3;
+  margin-top: 0;
+}
+
+.sidebar .sidebar-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  overflow-y: auto;
+
+}
+
+.sidebar-links li {
+  margin-bottom: 15px;
+}
+
+.sidebar-links h4 {
+  color: #00a3a3;
+}
+
+.sidebar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+  display: block;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+.sidebar-links a.active {
+  background-color: #ccc;
+  color: black;
+  cursor: auto;
+
+}
+
+.sidebar-links a:hover:not(a.active) {
+  color: #ff6600;
+
+  background-color: #254646;
+}
+
+.menu-separator {
+  border-bottom: 1px solid #444;
+  margin: 10px 0 0;
+}
+
+.user-account {
+  margin-top: 0px;
+  padding-top: 0px;
+
+}
+
+.user-profile img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-detail h3 {
+  margin: 0;
+  color: #00a3a3;
+}
+
+.user-detail span {
+  color: #aaa;
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-left: 165px;
+  padding: 20px;
+  background-color: #698491;
+
+  min-height: 100%;
+
+}
+
+.intro-section,
+.programs-section,
+.news-section,
+.testimonials-section,
+.contact-section {
+  margin-bottom: 30px;
+}
+
+.news-item {
+  background-color: #50ae90;
+  border-left: 4px solid #00a3a3;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+blockquote {
+  border-left: 4px solid #ff6600;
+  padding-left: 15px;
+  color: #555;
+  font-style: italic;
+  background-color: #aaa;
+}
+
+.contact-section a {
+  color: #0c2828;
+}
+
+/* Forms (Sign Up, Login) */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  padding: 10px 0;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1em;
+  width: 100%;
+}
+
+button {
+
+  padding: 10px;
+  background-color: #00a3a3;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+button:hover {
+  background-color: #008080;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  max-width: 100%;
+  bottom: 0;
+  margin-left: 160px;
+}
+
+
+
+
+
+/* profile style*/
+.user-info {
+  /* height: 50px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.user-info img {
+
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: inline;
+}
+
+.user-cont p {
+  margin-left: 40px;
+  color: #adacab;
+}
+
+/*table*/
+table {
+
+  text-align: center;
+  background-color: rgb(142, 207, 207);
+}
+
+
+/*video style*/
+
+.intro video {
+  max-width: 100%;
+
+
+
+}
